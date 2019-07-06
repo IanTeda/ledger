@@ -14,7 +14,22 @@ module.exports = function(environment) {
       EXTEND_PROTOTYPES: {
         // Prevent Ember Data from overriding Date.parse.
         Date: false
-      }
+      },
+
+      /**
+     * FONT AWESOME
+     * https://fontawesome.com/
+     * https://github.com/FortAwesome/ember-fontawesome
+     * ember install @fortawesome/ember-fontawesome
+     * npm i --save-dev @fortawesome/free-solid-svg-icons @fortawesome/free-brands-svg-icons @fortawesome/free-regular-svg-icons
+     */
+      fontawesome: {
+        icons: {
+        'free-solid-svg-icons': 'all',
+        "free-brands-svg-icons": "all",
+        "free-regular-svg-icons": "all",
+        },
+      },
     },
 
     APP: {

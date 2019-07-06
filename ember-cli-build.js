@@ -15,6 +15,13 @@ module.exports = function(defaults) {
       'importBootstrapFont': false,
       'importBootstrapCSS': true
     }
+
+    /**
+     * FONT AWESOME
+     * Config in ./config/environment.js > EmberENV: {}
+     */
+
+
   });
 
   // Use `app.import` to add additional libraries to the generated
