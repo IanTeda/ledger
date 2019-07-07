@@ -21,6 +21,24 @@ module.exports = function(defaults) {
      * Config in ./config/environment.js > EmberENV: {}
      */
 
+     /**
+      * EMBER POSTCSS
+      * ember install ember-cli-postcss
+      * npm i --save-dev postcss-import postcss-css-variables postcss-preset-env postcss-nested
+      */
+    postcssOptions: {
+      compile: {
+          // Order is important
+          plugins: [
+              {module: require("postcss-import")}, // https://github.com/postcss/postcss-import
+              {module: require("postcss-css-variables")}, // https://github.com/MadLittleMods/postcss-css-variables
+              {module: require("postcss-preset-env")}, // https://preset-env.cssdb.org/
+              {module: require("postcss-nested")}, // https://github.com/postcss/postcss-nested
+          ],
+      }
+
+  }
+
 
   });
 
